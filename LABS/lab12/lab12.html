@@ -1,0 +1,121 @@
+
+<!-- saved from url=(0068)http://courses.missouristate.edu/jamilsaquer/CSC131/LABS/lab12A.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
+
+<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
+<title>CSC 131</title>
+</head>
+
+<body bgcolor="#FFFFFF" data-pinterest-extension-installed="cr1.37">
+
+<p align="center"><strong>CSC 131 - Introduction to Computer
+Science 1<br>
+Lab </strong>12</p>
+<hr>
+<p>The purpose of this lab is to practice working with <strong>singly linked 
+structures.</strong> You need to copy the module <strong>
+node.py</strong> 
+into the folder that contains your solution for 
+this lab.&nbsp; </p>
+<p>Write the code for a class called <strong>SinglyLinkedStructure</strong> that represents a 
+singly linked structure. </p>
+<p>The class contains: &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </p>
+<ul>
+				<li>A <strong>constructor</strong> with two instance variables <strong>head</strong> and
+				<strong>size</strong>, 
+				where<ul>
+								<li>head is a link to the first node in the 
+								singly linked structure. It should be set to <code>None</code>
+								when the linked structure is empty. </li>
+								<li>size is the number of nodes currently in the 
+								list. </li>
+				</ul>
+				The constructor accepts one parameter called <code>seq </code> with default 
+				value None, which is expected to receive a Python sequence. The 
+				constructor uses <code>seq </code> to initialize the singly linked structure. 
+				For example, if the Python list [1,2,3] is plugged in for <code>seq</code>, 
+				the constructor will create a singly linked structure object 
+				with values 1, 2, 3 where the first node contains the value 1, 
+				the second node contains the value 2, and so on.</li>
+				<li>&nbsp;An instance method <strong>append(value)</strong> that appends a new 
+				node with data set to value to the end of the singly linked 
+				structure. Notice that your constructor can use this method to 
+				append the values in seq to the singly linked structure. </li>
+				<li>An instance method <strong>__len__ </strong>that returns the number of nodes 
+				in the singly linked structure. </li>
+				<li>An <strong>str</strong> method that returns a string representation of the 
+				singly linked structure consisting of the concatenation of the values 
+				in the different nodes. </li>
+				<li>Use the following <strong>main()</strong> function to test your code:
+<pre><code>def main():
+    l1 = SinglyLinkedStructure()
+    print('Empty singly linked structure')
+    print(l1)
+    print(len(l1))
+    print()
+    
+    l1.append('Hello,')
+    l1.append('how')
+    l1.append('are')
+    l1.append('you?')
+    print(l1)
+    print(len(l1))
+    print()
+    
+    seq = list(range(1,6))
+    l2 = SinglyLinkedStructure(seq)
+    print(l2)
+    print(len(l2))
+    print()
+
+    t = tuple([x*10 for x in seq])
+    print(t)
+    print()
+
+    l2 = SinglyLinkedStructure(t)
+    print(l2)
+    print(len(l2))
+    print()
+
+    l2 = SinglyLinkedStructure("abcxyz")
+    print(l2)
+    print(len(l2))
+    
+main()</code>
+</pre>
+
+				
+                </li>
+</ul>
+
+<p>The corresponding output is as follows:
+</p><pre><code>
+&gt;&gt;&gt; 
+Empty singly linked structure
+
+0
+
+Hello, how are you? 
+4
+
+1 2 3 4 5 
+5
+
+(10, 20, 30, 40, 50)
+
+10 20 30 40 50 
+5
+
+a b c x y z 
+6
+&gt;&gt;&gt;
+</code>
+</pre>
+<p>Name your file lab12.py. Make sure to include your name and the name of your 
+TRACE folder at the top of the file in a docstring. When you are done, demonstrate 
+your code to the instructor and upload an electronic copy of your 
+solution in your CSC131 upload folder in a folder called LABS\lab12.</p>
+
+
+
+</body></html>

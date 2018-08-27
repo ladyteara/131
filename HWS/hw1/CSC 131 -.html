@@ -1,0 +1,77 @@
+
+<!-- saved from url=(0089)http://courses.missouristate.edu/jamilsaquer/CSC131/HOMEWORK/hw1_Lo_Shu_Magic_Square.html -->
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office"><head><meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<meta name="GENERATOR" content="Microsoft FrontPage 12.0">
+<title>CSC 131 -</title>
+<style type="text/css">
+.style1 {
+				font-family: "Times New Roman";
+}
+
+img {
+	vertical-align:middle;
+}
+caption {caption-side:bottom;}
+</style>
+</head>
+
+<body bgcolor="#FFFFFF" data-pinterest-extension-installed="cr1.35">
+
+<p align="center"><span class="style1">CSC 131 - Introduction to Computer
+Science 1<br> 
+Homework Assignment # 1<br>
+Due: Beginning of class on Friday, January 30, 2015.</span></p>
+<hr>
+
+<p>The Lo Shu Magic Square is a 3 by 3 grid with the following properties:
+</p><ul>
+<li>The grid contains the numbers 1 through 9 where each umber appears exatly once 
+in the grid.</li> 
+<li>The sum of each row, each column, and each diagonal all add up 
+to the same number, 15.</li> 
+</ul>
+<p>&nbsp;An example of a&nbsp; Lo Shu Magic Square is as follows: <br><br><img src="./CSC 131 -_files/magic_square1.jpg"> 
+Remark:
+Image adopted from <a href="http://en.wikipedia.org/wiki/Magic_square">http://en.wikipedia.org/wiki/Magic_square</a></p>
+
+<p>In a program, you can simulate a magic square by using a two-dimensional 
+list. Write a Python program that tests whether or not a 3 by 3 grid is a valid 
+magic square. The program reads the input from a text file named <strong>
+input.txt</strong>. Each line in the file contains exactly 9 numbers that 
+correspond to the values in a possible magic square. The first three numbers 
+correspond to the values in the first row, the next three values correspond to 
+the second row, and the last three values correspond to the last row. For 
+example, the above magic square would appear in the file as the line 4 3 8 9 5 1 2 7 6. 
+<a href="http://courses.missouristate.edu/jamilsaquer/CSC131/HOMEWORK/magic.txt">Sample input file</a> is as follows:<br>
+</p><pre>4 3 8 9 5 1 2 7 6
+8 3 4 1 5 9 6 7 2
+6 1 8 7 5 3 2 9 4
+6 9 8 7 5 3 2 1 4
+6 1 8 7 5 3 2 1 4
+6 1 3 2 9 4 8 7 5
+</pre>
+<p>The output from the program is the word <strong>valid</strong> if the 
+corresponding grid is a valid magic square and the word <strong>invalid</strong> 
+if it is not. Sample program run using the above <a href="http://courses.missouristate.edu/jamilsaquer/CSC131/HOMEWORK/magic.txt">input file</a> is as follows:</p>
+
+<div>
+<pre>valid
+valid
+valid
+invalid
+invalid
+invalid
+</pre>
+</div>
+<p>Please give your program the name hw1.py. <strong>Use comments to document and 
+explain your code where needed.</strong> Make sure to upload an electronic copy of your 
+source code in a folder called HW\hw1\ in your CSC 131 TRACE folder. 
+It is always a good idea to make sure that your code runs correctly from inside 
+your TRACE folder. Make 
+sure to also turn in a stapled hard copy of the source code in class on the due 
+date. <strong>Write your name and TRACE folder name at the top of your file.&nbsp;
+</strong> </p>
+
+
+<span style="height: 20px; width: 40px; min-height: 20px; min-width: 40px; position: absolute; opacity: 0.85; z-index: 8675309; display: none; cursor: pointer; top: 228px; left: 18px; background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAUCAYAAAD/Rn+7AAADU0lEQVR42s2WXUhTYRjHz0VEVPRFUGmtVEaFUZFhHxBhsotCU5JwBWEf1EWEEVHQx4UfFWYkFa2biPJiXbUta33OXFtuUXMzJ4bK3Nqay7m5NeZq6h/tPQ+xU20zugjOxR/+7/O8539+5znnwMtNTExwJtMb3L/fiLv3botCSmUjeCaejTOb39AiFothfHxcFIrHY8RksZjBsckJcOIRMfFsHD/SsbExUYpnI8DR0dGUGjSb0byhEJp5Uqg5CTSzc2CQleJbMEj9/ywBcGRkJEk9DQqouEVQT1sK444yWI9UonmTjGqauVLEIlHa9x8lAMbj8SSpp0rwKGMVvg8P46vbg0C7na8z8JsMcgHe7jlEa+edRhiLy8n/TUMfu6EvLElk+U0WtGwrTrdfAGQf5J8iiK4LVzDU28t8JtMSocf8E+l68myaNFXm/6rXslLK7ay5TOunuRvZWpJuvwAYjUaTpOIWoquuAZ219RTaxKYp9BbjycoN5FvL9qH9TBX5rvoGdJythvXYSTxdtRnWylO/ZdqrLsGwszzhWQ593z2KlAwCYCQSSZJ6ehZ0W7bD9VBLgN0NCqr3qR7R2rBrL3pu3Sb/7nDlz2uy6cG0OXk0GTbZXzNp8trsPAQdTj6frlWzN2DcXZGKQQAMh8NJ6rpyHe+PnkCr/CAFdZyvpfpjuvkifLF9wIt1Wwlo0OHie1RvWrKa93RjzfzliTzPKz3ltB0/Tevmwp14wGUgHAzSOoUEwFAolFaaBSuhnslPRkJexUJtZ6v5HtUeLswl33n1BgEY5fvhs9sJ3FAiT+QYyyvoAQJuD0KBAFRTJNAuz5/s3gJgMBhMJwrVFRThM5tY5zUF/A4X1f2fvQTRLCuBreoim0YmAbqNJryvPEXeeq46kaNdkQ/1HCncbJKPs9ZSv2VHGfWsZ2hfkhKAfr8/pdxWKx4wwD69PmVfNSOL+lr2w+gYqHpWDtXt1xQ8AMlWU0e1lqLd/APRHoP8AJqWrQG9gYxcPMsvSJUvAA4MDKTUJ7MZLaVy8v+qT21tcDx/OemePr0RTkNrur4A6PP5xCgBsL+/X4wiQDpuuVxOeL1eMYmYeDY6sOp0z+B0OuHxeEQhxkJMFosJiSO/UinOI/8Pc+l7KKArAT8AAAAASUVORK5CYII=);"></span></body></html>

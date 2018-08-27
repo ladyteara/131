@@ -1,0 +1,23 @@
+The file WorldSeriesWinners.txt contains a chronological list of the World Series winning teams from 1903 through 2014. The first line in the file is the name of the team that won in 1903, and the last line is the name of the team that won in 2014. Note that the World Series was not played in 1904 or 1994.
+
+Write a program that lets the user enter the name of a team and then displays the number of times that team has won the World Series since 1903.
+
+Sample program runs are as follows: 
+>>> main()
+Enter team name: St. Louis Cardinals
+St. Louis Cardinals won 11 times
+>>> main()
+Enter team name: Kansas City Royals
+Kansas City Royals won 1 times
+>>> main()
+Enter team name: San Francisco Giants
+San Francisco Giants won 3 times
+>>> main()
+Enter team name: Texas Rangers
+Texas Rangers won 0 times
+>>> 
+Format the ouput of your program as shown in the sample program runs. Design your program so that it contains at least one function other than the main function. No code should appear outside functions.
+
+Hint: You may want to read the contents of WorldSeriesWinners.txt into a list. When the user enters the name of a team, use a loop to step through the list, counting the number of times the selected team appears.
+
+When you are done, demonstrate your code to the instructor and upload your solution to your CSC131 upload folder in a folder called LABS\lab1.

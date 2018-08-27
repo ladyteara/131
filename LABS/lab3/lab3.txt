@@ -1,0 +1,46 @@
+The purpose of this lab is to practice working with Python's higher order 
+and ternary operator. Write all of your code in one script named lab3.py.
+
+Let a be the list of values produced by list(range(1, 11)).
+
+[1 point] Using the map function and a lambda argument, write an expression that
+produces a list of the cubes of the values in a. Assign the result to a variable
+called m and print m.
+
+[1 point] Using the filter function and a lambda argument, write an expression 
+that produces a list of the values in a that are divisible by 3. Assign the 
+result to a variable called f1 and print f1.
+
+[1 point] Using the reduce function and a lambda argument, write an expression 
+that returns the result of concatenating all the digits in a. Assign the result 
+to a variable called r1 and print r1. The output from this step is the string 
+'12345678910'
+
+[1 point] Use a list comprehension to produce the same list as in question 1 
+(i.e., the new list will contain the cubes of the values in a).
+
+[1 point] Use a list comprehension to produce the same list as in question 2.
+
+[1 point] Use a list comprehension to produce a list containing the cubes of 
+the values in a that are divisible by 3. The output from this step is the list 
+[27, 216, 729]
+
+[2 points] Write a function named evenFilter that takes as an argument a 
+dictionary of elements indexed by integer keys. Using only a list comprehension,
+return the values of the elements associated with the keys that are evenly 
+divisible by 2. For example,
+
+>>> data = {1: "one", 3: "three", 4: "four", 5: "five", 8: "eight", 10: "ten"}
+>>> print(evenFilter(data))
+['four', 'eight', 'ten']
+
+[2 points] Write a function called findMin(x, y) that uses the ternary operator
+to find and return the minimum of its two arguments. Write code to test this 
+function.
+
+
+
+Name your file lab3.py. Make sure to include your name and the name of your 
+TRACE folder at the top of the file in a docstring. When you are done, 
+demonstrate your code to the instructor and upload your solution in your CSC131 
+upload folder in a folder called LABS\lab3.

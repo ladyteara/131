@@ -1,0 +1,23 @@
+CSC 131 - Introduction to Computer Science 1
+Lab 5
+
+The purpose of this lab is to practice working with class variables, pickling and exception handling. You need to download the Student class that you have seen earlier, save it in a file with the name student.py, then do the following
+
+Add a class variable named COUNT to the Student class. Initialize COUNT to 0. The purpose of this class variable is to keep track of the number of Student objects that have been created. Add code to the constructor to increment COUNT by 1 every time a Student object is created.
+Download the file for this week's lab by clicking on this link. Save the file as lab5.py. Make sure that the files lab5.py and student.py are saved in the same folder.
+Study the given code and run the program. The output should be one line indicating how many student objects have been created.
+Complete the code for the function writeStudentsToFile(students), which uses the pickle module to write all student objects in its list parameter to a file with the name students.dat
+Complete the code for the function displayFromFile(), which uses the pickle module to read the objects stored in the file students.dat and prints out these objects.
+Run the program. The output should be as follows:
+	Number of student objects created is 5
+	Name Name1
+	Scores 0 0 0
+	Name Name2
+	Scores 0 0 0
+	Name Name3
+	Scores 0 0 0
+	Name Name4
+	Scores 0 0 0
+	Name Name5
+	Scores 0 0 0
+Name your file lab5.py. Make sure to include your name and the name of your TRACE folder at the top of the file in a docstring. When you are done, demonstrate your code to the instructor and upload your solution in your CSC131 upload folder in a folder called LABSlab5.
